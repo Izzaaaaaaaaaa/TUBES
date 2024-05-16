@@ -19,19 +19,18 @@ Jumlah_pembelian = int(input("Jumlah pembelian tiket: "))
 
 if kode=="EE01B":
     Tujuan = "SURABAYA"
-    harga =  350.000 * Jumlah_pembelian
-elif kode=="EE04C":
+    harga =  350000 
     Tujuan = "PURWOKERTO"
-    harga =  250.000 * Jumlah_pembelian
+    harga =  250000 
 elif kode=="FEG01B":
     Tujuan = "JAKARTA"
-    harga =  450.000 * Jumlah_pembelian
+    harga =  450000 
 elif kode=="GH24J":
     Tujuan = "LAMPUNG"
-    harga =  500.000 * Jumlah_pembelian
+    harga =  500000 
 elif kode=="BK23D":
     Tujuan = "RIAU"
-    harga =  800.000 * Jumlah_pembelian
+    harga =  800000
 else:
     Tujuan = "Tidak tersedia"
     harga =  0
@@ -43,6 +42,19 @@ print("Kode pemesanan pembeli: ", kode)
 print("Kota tujuan: ", Tujuan)
 print("Harga tiket: ", harga)
 print("Jumlah pembelian Tiket: ", Jumlah_pembelian)
+cetak()
+
+if Jumlah_pembelian>=3:
+    potongan = (Jumlah_pembelian*harga)*0.1
+else:
+    potongan=0
+total_potongan = (Jumlah_pembelian*harga)-potongan
+print("Total potongan yang di dapat: ", potongan)
+print("Total bayar : ", total_potongan)
+bayar = int(input("Jumlah pembayaran: "))
+kembalian = (bayar-total_potongan)
+print("uang kembalian: ",kembalian)
+  
  
 
 
