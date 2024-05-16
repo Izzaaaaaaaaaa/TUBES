@@ -16,44 +16,55 @@ nama = input("Masukkan Nama Anda: ")
 no = int(input("No Hp: "))
 kode = str(input("Masukkan KODE Pemesanan: "))
 Jumlah_pembelian = int(input("Jumlah pembelian tiket: "))
-
-if kode=="EE01B":
-    Tujuan = "SURABAYA"
-    harga =  350000 
-    Tujuan = "PURWOKERTO"
-    harga =  250000 
-elif kode=="FEG01B":
-    Tujuan = "JAKARTA"
-    harga =  450000 
-elif kode=="GH24J":
-    Tujuan = "LAMPUNG"
-    harga =  500000 
-elif kode=="BK23D":
-    Tujuan = "RIAU"
-    harga =  800000
-else:
-    Tujuan = "Tidak tersedia"
-    harga =  0
+def tiket_BUS():
+    if kode=="EE01B":
+         Tujuan = "SURABAYA"
+         harga =  350000 
+    elif kode=="EE04C":
+        Tujuan = "PURWOKERTO"
+        harga =  250000 
+    elif kode=="FEG01B":
+        Tujuan = "JAKARTA"
+        harga =  450000 
+    elif kode=="GH24J":
+        Tujuan = "LAMPUNG"
+        harga =  500000 
+    elif kode=="BK23D":
+        Tujuan = "RIAU"
+        harga =  800000
+    else:
+         Tujuan = "Tidak tersedia"
+         harga =  0
+         
+# confirm = input("Konfirmasi pemesanan? (ya/tidak): ").lower()
+#     if confirm == "ya":
+#                  print("Pemesanan dikonfirmasi. Terima kasih atas pembelian Anda!")
+#     elif confirm == "tidak":
+#                  print("Pemesanan dibatalkan.")
+#     else:
+#                  print("Pilihan tidak valid.")
+#     except ValueError:
+#          print("Input tidak valid, silakan coba lagi.")
     
-cetak()
-print("Nama pembeli: ", nama)
-print("No Hp: ", no )
-print("Kode pemesanan pembeli: ", kode)
-print("Kota tujuan: ", Tujuan)
-print("Harga tiket: ", harga)
-print("Jumlah pembelian Tiket: ", Jumlah_pembelian)
-cetak()
+    cetak()
+    print("Nama pembeli: ", nama)
+    print("No Hp: ", no )
+    print("Kode pemesanan pembeli: ", kode)
+    print("Kota tujuan: ", Tujuan)
+    print("Harga tiket: ", harga)
+    print("Jumlah pembelian Tiket: ", Jumlah_pembelian)
+    cetak()
 
-if Jumlah_pembelian>=3:
-    potongan = (Jumlah_pembelian*harga)*0.1
-else:
-    potongan=0
-total_potongan = (Jumlah_pembelian*harga)-potongan
-print("Total potongan yang di dapat: ", potongan)
-print("Total bayar : ", total_potongan)
-bayar = int(input("Jumlah pembayaran: "))
-kembalian = (bayar-total_potongan)
-print("uang kembalian: ",kembalian)
+# if Jumlah_pembelian>=3:
+#     potongan = (Jumlah_pembelian*harga)*0.1
+# else:
+#     potongan=0
+# total_potongan = (Jumlah_pembelian*harga)-potongan
+# print("Total potongan yang di dapat: ", potongan)
+# print("Total bayar : ", total_potongan)
+# bayar = int(input("Jumlah pembayaran: "))
+# kembalian = (bayar-total_potongan)
+# print("uang kembalian: ",kembalian)
   
  
 

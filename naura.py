@@ -1,7 +1,3 @@
-# print("hai")
-
-# print("1")
-
 def display_routes():
     routes = {
         1: {"route": "Jakarta - Bandung", "price": 100000},
