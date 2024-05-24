@@ -1,3 +1,11 @@
+def home():
+    pass
+print("              <<========== Pembelian Tiket BUS ===========>>")
+print()
+print("                  <<========== Kota Tujuan ===========>>     ")
+def cetak():
+    print("          ===============================================")
+cetak()
 def display_routes():
     routes = {
         1: {"route": "Jakarta - Bandung", "price": 100000},
