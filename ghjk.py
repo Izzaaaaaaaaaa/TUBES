@@ -25,3 +25,5 @@ def waktu_keberangkatan(rute_id):
     for i,jadwal in enumerate(waktu_keberangkatan[rute_id], start=1):
         print(f"{i}. {jadwal}")
     return jadwal[rute_id]
+
+nama = input('masukkan nama anda: ')
