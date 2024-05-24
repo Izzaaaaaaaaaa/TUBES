@@ -67,6 +67,8 @@ def get_passenger_info(quantity):
         })
     return passengers
 
+
+
 def book_ticket():
     routes = display_routes()
     try:
