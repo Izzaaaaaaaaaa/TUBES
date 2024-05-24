@@ -2,9 +2,14 @@ def home():
     pass
 print("              <<========== Pembelian Tiket BUS ===========>>")
 print()
+print("                <<========== Terminal INTR ===========>>     ")
+print()
 print("                  <<========== Kota Tujuan ===========>>     ")
+
 def cetak():
+
     print("              ===============================================")
+
 cetak()
 def rute_keberangkatan():
     routes = {
