@@ -2,7 +2,7 @@ def home():
     pass
 print("              <<========== Pembelian Tiket BUS ===========>>")
 print()
-print("                <<========== Terminal ZNTR ===========>>     ")
+print("                <<========== Terminal INTR ===========>>     ")
 print()
 print("                  <<========== Kota Tujuan ===========>>     ")
 
